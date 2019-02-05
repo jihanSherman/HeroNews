@@ -6,7 +6,7 @@ function getSelectValue (){
 //search Marvel Characters based on first letter of user input
 var marvelCharacters = {
     render: function(){
-        var api = "http://gateway.marvel.com/v1/public/characters?";
+        var api = "https://gateway.marvel.com/v1/public/characters?";
         var name = "name=" + document.getElementById("list").value;
         var apiKey = "&ts=1&apikey=e285bc28b3193e8141d6784bc6ebe42e&hash=818ebb62e190e72853672f3439619557";
         var urlMarvelCharacters = api + name + apiKey;
