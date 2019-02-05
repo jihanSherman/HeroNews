@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Superheroes in the News!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+    <div class="headline">
+        <h1>Superheroes in the News!</h1>
+        <h4>By Jihan Sherman & Patrick Fiorilli</h4>
+    </div>
+
+    <div class="container">
+
+        <!--Year Input Form-->
+        <div class="yearInput">
+            <!--Question-->
+            <h3>Keyword search the New York Times’ archive for the names of “Earth’s Mightiest Heroes”! Uncover the hitherto hidden histories of Spider-Man, the Incredible Hulk, the Avengers, and more!</h3>
+            <br>
+            <h3>Choose a hero below to read their biography, then New York Times articles featuring the name of your favorite hero will appear below! Remember to scroll down to see your results.</h3>
+            <form action="js/script.js" method="GET">
+                <label>
+                    <select id="list">
+                        <option value="Placeholder">Choose a Hero</option>
+                        <option value="Black Panther">Black Panther</option>
+                        <option value="Black Widow">Black Widow</option>
+                        <option value="Captain America">Captain America</option>
+                        <option value="Doctor Strange">Doctor Strange</option>
+                        <option value="Daredevil">Daredevil</option>
+                        <option value="Drax">Drax</option>
+                        <option value="Falcon">Falcon</option>
+                        <option value="Gamora">Gamora</option>
+                        <option value="Hawkeye">Hawkeye</option>
+                        <option value="Hulk">Hulk</option>
+                        <option value="Invisible Woman">Invisible Woman</option>
+                        <option value="Iron Man">Iron Man</option>
+                        <option value="Jessica Jones">Jessica Jones</option>
+                        <option value="Loki">Loki</option>
+                        <option value="Luke Cage">Luke Cage</option>
+                        <option value="Nebula">Nebula</option>
+                        <option value="Quicksilver">Quicksilver</option>
+                        <option value="Scarlet Witch">Scarlet Witch</option>
+                        <option value="Spider-Man">Spider-Man</option>
+                        <option value="Storm">Storm</option>
+                        <option value="Thing">Thing</option>
+                        <option value="Thor">Thor</option>
+                        <option value="Vision">Vision</option>
+                        <option value="Winter Soldier">Winter Soldier</option>
+                        <option value="Wolverine">Wolverine</option>
+                        <option value="Wasp">Wasp</option>
+                    </select>
+                </label>
+                <input type="button" id="submit" value="Submit!" onclick="getSelectValue();">
+            </form>
+        </div>
+
+        <!--Marvel Section Image-->
+        <div class="marvelIMG">
+            <img src="images/stockComics.jpg" alt="Comic Books Vertically Aligned">
+        </div>
+
+        <!--Marvel Characters-->
+    <div class="marvelAPI">
+        <h1 class="marvelName">Marvel Comics</h1>
+        <p>*Please note that some characters may not have a photo and/or description.</p>
+        <br/>
+        <p class="loadingText" id="message-marvelCharacters"></p>
+        <div id="characters-container"></div>
+        <br>
+        <!--Marvel Copyright Footer-->
+        <footer class="footer-marvel">
+            <div class="container">
+                <p class = "text-muted" id="footer-marvel"></p>
+            </div>
+        </footer>
+    </div>
+
+        <!--NYT Section Image-->
+        <div class="nytIMG">
+            <img src="images/stockNewspapers.jpg" alt="Newspapers Vertically Aligned">
+        </div>
+
+        <!--NYT Search by Keyword-->
+        <div class="nytAPI">
+            <h1 class="nytTitle">The New York Times</h1>
+            <br/>
+            <p class="loadingText" id="message-nytSearch"></p>
+            <div id="news-container"></div>
+
+            <br>
+            <!--NYT Copyright Footer-->
+            <footer class="footer-nyt">
+                <div class="container">
+                    <p class = "text-muted" id="footer-nyt"></p>
+                </div>
+            </footer>
+
+        </div>
+
+        <div class="finalText">
+            <h3>Were your results what you expected? Invisible associations can lead in many surprising directions. Why not try another search and see what other correlations emerge?</h3>
+        </div>
+
+    </div>
+
+    <!--project javascript file-->
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+</html>

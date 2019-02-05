@@ -1,0 +1,113 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: grey;
+    color: white;
+
+    font:  normal 15px Georgia, "Times New Roman", serif;
+
+    line-height: 2em;
+    margin:0;
+}
+
+.container{
+    width:80%;
+    margin: auto;
+}
+
+.yearInput{
+    background-color: cadetblue;
+    color: white;
+
+    border:5px navajowhite solid;
+    border-bottom: 5px navajowhite dotted;
+    border-left: 5px navajowhite dotted;
+
+    padding: 20px;
+
+    margin: 20px 0;
+}
+
+.headline{
+    color:white;
+    font: 70px;
+    letter-spacing: 0.5em;
+    word-spacing: 1em;
+    padding: 20px;
+}
+
+.headline h4{
+    word-spacing: 0.5em;
+    letter-spacing: 0.2em;
+}
+
+.marvelAPI{
+    background-color: #ED1D24;
+    color: white;
+
+    border:5px white solid;
+    border-left: 5px white dotted;
+    border-bottom: 5px white dotted;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    color: white;
+    font: normal 15px "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+.nytAPI{
+    background-color: whitesmoke;
+    color: dimgrey;
+
+    border:5px black solid;
+    border-left: 5px black dotted;
+    border-bottom: 5px black dotted;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    color: black;
+    font: normal 15px "Courier New", Courier, monospace;
+}
+
+.finalText{
+    background-color: cadetblue;
+    color: white;
+
+    border:5px navajowhite solid;
+    border-bottom: 5px navajowhite dotted;
+    border-left: 5px navajowhite dotted;
+
+    padding: 20px;
+
+    margin: 20px 0;
+}
+
+.marvelAPI a{
+    text-decoration:underline;
+    color:aliceblue;
+}
+
+.nytAPI a{
+    text-decoration:underline;
+    color: black;
+    font: normal 15px "Courier New", Courier, monospace;
+}
+
